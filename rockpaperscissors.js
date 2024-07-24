@@ -63,4 +63,12 @@ function playGame() {
     return "Human Score: " + humanScore + " vs Computer Score: " + computerScore;
 }
 
-console.log(playGame());
+const btn = document.querySelectorAll("btn");
+btn.addEventListener("click", () => {
+    // Need to change
+    let choice = "ROCK";
+    // Step 2 Still
+    playRound(choice, getComputerChoice());
+})
+
+// console.log(playGame());
